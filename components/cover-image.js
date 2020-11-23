@@ -1,7 +1,7 @@
 import cn from 'classnames'
 import Link from 'next/link'
 import { imageBuilder } from '../lib/sanity'
-
+import {Image} from "next/image"
 export default function CoverImage({ title, url, imageObject, slug }) {
   const image = (
     <img
