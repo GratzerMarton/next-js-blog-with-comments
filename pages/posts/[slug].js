@@ -13,13 +13,15 @@ import PostTitle from '../../components/post-title'
 import Head from 'next/head'
 import { CMS_NAME } from '../../lib/constants'
 import Form from '../../components/form'
+import Nav from "../../components/Nav"
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
-  return (
+  return (<>
+    <Nav></Nav>
     <Layout preview={preview}>
       <Container>
         <Header />
@@ -51,7 +53,7 @@ export default function Post({ post, morePosts, preview }) {
           </>
         )}
       </Container>
-    </Layout>
+    </Layout></>
   )
 }
 
