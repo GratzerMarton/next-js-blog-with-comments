@@ -4,7 +4,8 @@ import Link from 'next/link'
 function Nav(props) {
     return (
         <div className="w-full flex   justify-around bg-red-200">
-          <Link href="/" >Blog</Link>
+            <Link href="/" >Home</Link>
+          <Link href="/blog" >Blog</Link>
           <Link href="/rolunk" >Rolunk</Link>
           <Link href="/builder" >Builder</Link>
         </div>
