@@ -6,6 +6,7 @@ import Layout from '../components/layout'
 import { getAllPostsForHome } from '../lib/api'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
+import Nav from "../components/Nav"
 
 export default function Index({ allPosts, preview }) {
   const heroPost = allPosts[0]
@@ -16,6 +17,7 @@ export default function Index({ allPosts, preview }) {
         <Head>
           <title>Next.js Blog Example with {CMS_NAME}</title>
         </Head>
+      <Nav></Nav>
         <Container>
           <Intro />
           {heroPost && (
