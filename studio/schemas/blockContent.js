@@ -8,6 +8,7 @@
  *    type: 'blockContent'
  *  }
  */
+
 export default {
   title: 'Block Content',
   name: 'blockContent',
@@ -57,6 +58,11 @@ export default {
     {
       type: 'image',
       options: {hotspot: true}
+    },
+    {
+      name: 'svgUpload',
+      title: 'Upload SVG File',
+      type: 'svgUploadPreview',
     }
   ]
 }
