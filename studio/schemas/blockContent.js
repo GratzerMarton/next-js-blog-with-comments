@@ -59,10 +59,6 @@ export default {
       type: 'image',
       options: {hotspot: true}
     },
-    {
-      name: 'svgUpload',
-      title: 'Upload SVG File',
-      type: 'svgUploadPreview',
-    }
+   
   ]
 }
