@@ -4,6 +4,7 @@ import CoverImage from '../components/cover-image'
 import PostTitle from '../components/post-title'
 import {imageBuilder} from '../lib/sanity'
 export default function PostHeader({ title, coverImage, date, author }) {
+  console.log(author);
   return (
     <>
       <PostTitle>{title}</PostTitle>

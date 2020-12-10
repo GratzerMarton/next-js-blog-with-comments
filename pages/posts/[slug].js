@@ -17,8 +17,10 @@ import Nav from "../../components/Nav"
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
+  console.log(post);
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
+
   }
   return (<>
     <Nav></Nav>
