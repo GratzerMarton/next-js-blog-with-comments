@@ -20,8 +20,8 @@ export default {
     {
       name: 'author',
       title: 'Author',
-      type: 'reference',
-      to: {type: 'author'}
+      type: 'array',
+      of: [{type: 'author', to: {type: 'author'}}]
     },
     {
       name: 'mainImage',
