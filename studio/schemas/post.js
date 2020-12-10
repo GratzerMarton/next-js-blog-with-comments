@@ -21,7 +21,7 @@ export default {
       name: 'author',
       title: 'Author',
       type: 'array',
-      of: [{type: 'author'}]
+      of: [{type: 'reference', to: {type: 'author'}}]
     },
     {
       name: 'mainImage',
